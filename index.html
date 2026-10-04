@@ -1,93 +1,480 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Responsive 3D Parallax Website</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Тарасов Кирилл | Python Backend Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <header class="hide">
-    <nav>
-      <img src="img/logo.png" alt="Travelo" class="logo">
-      <ul>
-        <li>
-          <a href="#">Login</a>
-        </li>
-        <li>
-          <a href="#">Sing up</a>
-        </li>
-        <li class="search">
-          <a href="#">
-            <i class="fa-solid fa-magnifying-glass"></i>
-          </a>
-        </li>
-        <li class="hamburger">
-          <a href="#">
-            <div class="bar"></div>
-          </a>
-        </li>
-      </ul>
-    </nav>
-  </header>
+<div class="container">
+    <!-- Хиро-секция -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="fade-in">Привет, я Кирилл 👋</h1>
+                <p class="subtitle fade-in">Python Backend Developer</p>
+                <p class="description fade-in">
+                    Создаю работающие приложения из идей.<br>
+                    Полный цикл: от архитектуры до деплоя.<br>
+                    Эксперт в Django, FastAPI и Docker.
+                </p>
+            </div>
+            <div class="hero-avatar fade-in">
+                <div class="avatar"><img class="avatar" src="avatar.png" alt=""></div>
+            </div>
+        </div>
+    </section>
 
-  <main>
-    <div class="vignette hide"></div>
-    <img src="img/background.png" data-speedx="0.3" data-speedy="0.38" data-speedz="0" data-rotation="0"
-      data-distance="-200" class="parallax bg-img">
-    <img src="img/fog_7.png" data-speedx="0.27" data-speedy="0.32" data-speedz="0" data-rotation="0" data-distance="850"
-      class="parallax fog-7">
-    <img src="img/mountain_10.png" data-speedx="0.195" data-speedy="0.305" data-speedz="0" data-rotation="0"
-      data-distance="1100" class="parallax mountain-10">
-    <img src="img/fog_6.png" data-speedx="0.25" data-speedy="0.28" data-speedz="0" data-rotation="0"
-      data-distance="1400" class="parallax fog-6">
-    <img src="img/mountain_9.png" data-speedx="0.125" data-speedy="0.155" data-speedz="0.15" data-rotation="0.02"
-      data-distance="1700" class="parallax mountain-9">
-    <img src="img/mountain_8.png" data-speedx="0.1" data-speedy="0.11" data-speedz="0" data-rotation="0.02"
-      data-distance="1800" class="parallax mountain-8">
-    <img src="img/fog_5.png" data-speedx="0.16" data-speedy="0.105" data-speedz="0" data-rotation="0"
-      data-distance="1900" class="parallax fog-5">
-    <img src="img/mountain_7.png" data-speedx="0.1" data-speedy="0.1" data-speedz="0" data-rotation="0.09"
-      data-distance="2000" class="parallax mountain-7">
-    <div class="text parallax" data-speedx="0.07" data-speedy="0.07" data-speedz="0" data-rotation="0.11"
-      data-distance="0">
-      <h2>Kir Tarasov</h2>
-      <h1>Backend dev</h1>
-    </div>
-    <img src="img/mountain_6.png" data-speedx="0.065" data-speedy="0.05" data-speedz="0.05" data-rotation="0.065"
-      data-distance="2300" class="parallax mountain-6">
-    <img src="img/fog_4.png" data-speedx="0.135" data-speedy="0.3" data-speedz="0" data-rotation="0"
-      data-distance="2400" class="parallax fog-4">
-    <img src="img/mountain_5.png" data-speedx="0.08" data-speedy="0.3" data-speedz="0.13" data-rotation="0.1"
-      data-distance="2550" class="parallax mountain-5">
-    <img src="img/fog_3.png" data-speedx="0.11" data-speedy="0.018" data-speedz="0" data-rotation="0"
-      data-distance="2800" class="parallax fog-3">
-    <img src="img/mountain_4.png" data-speedx="0.059" data-speedy="0.024" data-speedz="0.35" data-rotation="0.14"
-      data-distance="3200" class="parallax mountain-4">
-    <img src="img/mountain_3.png" data-speedx="0.04" data-speedy="0.018" data-speedz="0.32" data-rotation="0.05"
-      data-distance="3400" class="parallax mountain-3">
-    <img src="img/fog_2.png" data-speedx="0.15" data-speedy="0.0115" data-speedz="0" data-rotation="0"
-      data-distance="3600" class="parallax fog-2">
-    <img src="img/mountain_2.png" data-speedx="0.0235" data-speedy="0.013" data-speedz="0.42" data-rotation="0.15"
-      data-distance="3800" class="parallax mountain-2">
-    <img src="img/mountain_1.png" data-speedx="0.027" data-speedy="0.018" data-speedz="0.53" data-rotation="0.2"
-      data-distance="4000" class="parallax mountain-1">
-    <img src="img/sun_rays.png" class="sun-rays hide">
-    <img src="img/black_shadow.png" class="black-shadow hide">
-    <img src="img/fog_1.png" data-speedx="0.12" data-speedy="0.01" data-speedz="0" data-rotation="0"
-      data-distance="4200" class="parallax fog-1">
-  </main>
-  <footer>
-    Soon there will be my website
-  </footer>
+    <!-- О себе -->
+    <section class="about">
+        <h2 class="section-title fade-in">Обо мне</h2>
+        <div class="about-content fade-in">
+            <p>
+                Python-разработчик с опытом комерческих проектов.
+                Начинал с верстки сайтов на заказ, сейчас пишу бэкенд на Django и FastAPI.
+                Умею поднимать сервисы на VPS с Docker, Nginx и Gunicorn.
+            </p>
+            <p style="margin-top: 12px;">
+                В пет-проектах внедряю микросервисную архитектуру, тесты,
+                CI/CD и чистый код по SOLID. Ищу позицию Junior Python Backend Developer —
+                хочу решать реальные задачи в команде и расти как разработчик.
+            </p>
+        </div>
+    </section>
 
-  <script src=“https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
-  <script src="js/gsap.min.js"></script>
-  <script src="js/app.js" defer></script>
+    <!-- Технический стек -->
+    <section class="skills">
+        <h2 class="section-title fade-in">Технический стек</h2>
+        <div class="skills-grid">
+            <div class="skill-category fade-in">
+                <h3>Backend</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag django">Django</span>
+                    <span class="skill-tag fastapi">FastAPI</span>
+                    <span class="skill-tag drf">DRF</span>
+                    <span class="skill-tag sqlalchemy">SQLAlchemy</span>
+                    <span class="skill-tag pydantic">Pydantic</span>
+                </div>
+            </div>
+            <div class="skill-category fade-in">
+                <h3>Databases</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag postgres">PostgreSQL</span>
+                    <span class="skill-tag sql">SQL</span>
+                    <span class="skill-tag redis">Redis</span>
+                    <span class="skill-tag indexing">Indexing</span>
+                    <span class="skill-tag partitioning">Partitioning</span>
+                    <span class="skill-tag mongodb">MongoDB</span>
+                </div>
+            </div>
+            <div class="skill-category fade-in">
+                <h3>DevOps</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag docker">Docker</span>
+                    <span class="skill-tag kubernetes">Kubernetes</span>
+                    <span class="skill-tag ci-cd">CI/CD</span>
+                    <span class="skill-tag linux">Linux</span>
+                    <span class="skill-tag nginx">Nginx</span>
+                    <span class="skill-tag gunicorn">Gunicorn</span>
+                </div>
+            </div>
+            <div class="skill-category fade-in">
+                <h3>Инструменты</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag git">Git</span>
+                    <span class="skill-tag github-actions">GitHub Actions</span>
+                    <span class="skill-tag poetry">Poetry</span>
+                    <span class="skill-tag ruff">Ruff</span>
+                    <span class="skill-tag pytest">Pytest</span>
+                    <span class="skill-tag postman">Postman</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Коммерческие проекты -->
+    <section class="commercial-projects">
+        <h2 class="section-title fade-in">Коммерческие проекты</h2>
+
+        <div class="projects-columns">
+            <!-- ====== ЛЕВАЯ КОЛОНКА: rdeaps.com ====== -->
+            <div class="project-column fade-in">
+                <div class="project-column-header">
+                    <span class="project-status">✅ Завершён</span>
+                    <span class="project-date">2025-2026</span>
+                </div>
+                <h3 class="project-column-title"><a href="https://rdeaps.com" target="_blank">rdeaps.com</a></h3>
+                <p class="project-column-subtitle">Сайт-блог с админ-панелью · Словения</p>
+
+                <div class="project-column-body">
+                    <div class="project-tech">
+                        <span class="tech-tag">Django</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                        <span class="tech-tag">Docker</span>
+                        <span class="tech-tag">Nginx</span>
+                        <span class="tech-tag">Gunicorn</span>
+                    </div>
+
+                    <div class="project-achievement">
+                        <h4>🎯 Задача</h4>
+                        <p>Создать многостраничный сайт на английском языке с системой управления статьями и
+                            приложениями</p>
+                    </div>
+
+                    <div class="project-achievement">
+                        <h4>⚡ Что сделал</h4>
+                        <ul>
+                            <li>Совместно с заказчиком разработал ТЗ и согласовал оплату</li>
+                            <li>Сверстал адаптивный дизайн по макету Figma</li>
+                            <li>Создал админ-панель для CRUD-операций со статьями и файлами</li>
+                            <li>Реализовал фильтрацию и сортировку статей по названию и дате</li>
+                            <li>Встроил просмотр PDF-файлов прямо на сайте</li>
+                            <li>Настроил форму обратной связи с отправкой писем</li>
+                            <li>Выполнил деплой на VPS (Nginx + Gunicorn) с доменом</li>
+                            <li>Настроил SEO для того чтобы сайт находился во всех поисковиках</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-achievement">
+                        <h4>📊 Результат</h4>
+                        <p>Полнофункциональный сайт-блог, позволяющий заказчику самостоятельно управлять контентом</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ====== ПРАВАЯ КОЛОНКА: mediacja.by ====== -->
+            <div class="project-column fade-in">
+                <div class="project-column-header">
+                    <span class="project-status">✅ Завершён</span>
+                    <span class="project-date">2024</span>
+                </div>
+                <h3 class="project-column-title"><a href="https://mediacja.by" target="_blank">mediacja.by</a></h3>
+                <p class="project-column-subtitle">Сайт для коллегии медиаторов · Беларусь</p>
+
+                <div class="project-column-body">
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">Render</span>
+                    </div>
+
+                    <div class="project-achievement">
+                        <h4>🎯 Задача</h4>
+                        <p>Разработать сайт с нуля под ключ: от идеи до хостинга</p>
+                    </div>
+
+                    <div class="project-achievement">
+                        <h4>⚡ Что сделал</h4>
+                        <ul>
+                            <li>Самостоятельно разработал ТЗ и согласовал оплату</li>
+                            <li>Создал адаптивный дизайн для 3 страниц (главная, о нас, курсы)</li>
+                            <li>Реализовал динамический список сотрудников с возможностью добавления новых сотрудников
+                            </li>
+                            <li>Настроил хостинг на Render.com и привязал домен</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-achievement">
+                        <h4>📊 Результат</h4>
+                        <p>Полностью рабочий сайт с возможностью самостоятельного обновления контента</p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- Пет-проекты -->
+    <section class="projects">
+        <h2 class="section-title fade-in">Мои пет-проекты</h2>
+        <div class="projects-grid">
+
+            <!-- ====== Night Coder ====== -->
+            <div class="project-card fade-in">
+                <div class="project-header">
+                    <h3>🌙 Night Coder Forum</h3>
+                    <div class="project-badges">
+                        <span class="badge">Django</span>
+                        <span class="badge">PostgreSQL</span>
+                        <span class="badge">Docker</span>
+                        <span class="badge">SOLID</span>
+                    </div>
+                </div>
+                <p class="project-description">
+                    Полнофункциональный форум для разработчиков с системой репутации и голосованием.
+                    Полный production стек: Django + PostgreSQL + Gunicorn + Nginx.
+                </p>
+                <div class="project-stats">
+                    <div class="stat"><i class="fas fa-code"></i><span>85%+ тестов</span></div>
+                    <div class="stat"><i class="fas fa-check-circle"></i><span>SOLID архитектура</span></div>
+                    <div class="stat"><i class="fas fa-server"></i><span>Production VPS</span></div>
+                </div>
+
+                <!-- Карусель Night Coder -->
+                <div class="carousel" data-carousel="nc">
+                    <div class="carousel-track-wrapper">
+                        <div class="carousel-track">
+                            <img src="images/screenshots/nc1.png" alt="Night Coder скриншот 1" loading="lazy">
+                            <img src="images/screenshots/nc2.png" alt="Night Coder скриншот 2" loading="lazy">
+                            <img src="images/screenshots/nc3.png" alt="Night Coder скриншот 3" loading="lazy">
+                            <img src="images/screenshots/nc4.png" alt="Night Coder скриншот 4" loading="lazy">
+                            <img src="images/screenshots/nc5.png" alt="Night Coder скриншот 5" loading="lazy">
+                            <img src="images/screenshots/nc6.png" alt="Night Coder скриншот 6" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="carousel-indicators"></div>
+                </div>
+
+                <div class="project-links">
+                    <a href="https://nightcoder.rdeaps.com" class="btn btn-primary" target="_blank">
+                        <i class="fas fa-external-link-alt"></i> Демо
+                    </a>
+                    <a href="https://github.com/bravekirty/NightCoder" class="btn btn-secondary" target="_blank">
+                        <i class="fab fa-github"></i> Код
+                    </a>
+                </div>
+            </div>
+
+            <!-- ====== Image Tag Analyzer ====== -->
+            <div class="project-card fade-in">
+                <div class="project-header">
+                    <h3>🖼️ Image Tag Analyzer</h3>
+                    <div class="project-badges">
+                        <span class="badge">FastAPI</span>
+                        <span class="badge">Kubernetes</span>
+                        <span class="badge">React</span>
+                        <span class="badge">Микросервисы</span>
+                    </div>
+                </div>
+                <p class="project-description">
+                    Микросервисное приложение для анализа изображений с AI.
+                    API Gateway + 3 микросервиса + Redis + PostgreSQL.
+                </p>
+                <div class="project-stats">
+                    <div class="stat"><i class="fas fa-microchip"></i><span>3 микросервиса</span></div>
+                    <div class="stat"><i class="fas fa-sync-alt"></i><span>Async + Redis</span></div>
+                    <div class="stat"><i class="fas fa-code-branch"></i><span>K8s манифесты</span></div>
+                </div>
+
+                <!-- Карусель Image Analyzer -->
+                <div class="carousel" data-carousel="ia">
+                    <div class="carousel-track-wrapper">
+                        <div class="carousel-track">
+                            <img src="images/screenshots/ia1.png" alt="Image Analyzer скриншот 1" loading="lazy">
+                            <img src="images/screenshots/ia2.png" alt="Image Analyzer скриншот 2" loading="lazy">
+                            <img src="images/screenshots/ia3.png" alt="Image Analyzer скриншот 3" loading="lazy">
+                            <img src="images/screenshots/ia4.png" alt="Image Analyzer скриншот 4" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="carousel-indicators"></div>
+                </div>
+
+                <div class="project-links">
+                    <a href="https://imagetaganalyzer.rdeaps.com" class="btn btn-primary" target="_blank">
+                        <i class="fas fa-external-link-alt"></i> Демо
+                    </a>
+                    <a href="https://github.com/bravekirty/ImageTagAnalyzer" class="btn btn-secondary" target="_blank">
+                        <i class="fab fa-github"></i> Код
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Опыт работы -->
+    <section class="experience-timeline">
+        <h2 class="section-title fade-in">Опыт работы</h2>
+
+        <div class="timeline-simple">
+            <!-- ====== 2024–2026 ====== -->
+            <div class="timeline-item-simple fade-in">
+                <div class="timeline-year">2024–2026</div>
+                <div class="timeline-content-simple">
+                    <h3>Самостоятельный fullstack-разработчик</h3>
+                    <ul class="timeline-duties">
+                        <li>Разрабатывал сайты под ключ: от обсуждения ТЗ до деплоя на хостинг</li>
+                        <li>Работал с заказчиками из Беларуси и Словении на удалённой основе</li>
+                        <li>Использовал Django, HTML/CSS/JS, настраивал VPS (Nginx, Gunicorn)</li>
+                        <li>Внедрял SEO-оптимизацию для повышения видимости сайтов</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- ====== 2023 ====== -->
+            <div class="timeline-item-simple fade-in">
+                <div class="timeline-year">2023</div>
+                <div class="timeline-content-simple">
+                    <h3>Учитель и репетитор по программированию</h3>
+                    <ul class="timeline-duties">
+                        <li>Вёл индивидуальные и групповые занятия по основам Python и веб-разработке</li>
+                        <li>Объяснял сложные темы простым языком, адаптировал программу под уровень ученика</li>
+                        <li>Развил навыки коммуникации, терпения и умения структурировать информацию</li>
+                        <li>Этот опыт научил меня смотреть на код глазами новичка и объяснять логику ясно</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="certificates">
+        <h2 class="section-title fade-in">Сертификаты</h2>
+        <p class="certificates-description fade-in">
+            Ключевые сертификаты, подтверждающие мои знания и навыки.
+        </p>
+
+        <div class="cert-donut fade-in">
+
+            <!-- 1. ВЕРХНИЙ ЛЕВЫЙ (вертикальный) – кнопки СВЕРХУ -->
+            <div class="cert-card card-vertical-1">
+                <div class="cert-top">
+                    <p class="cert-name">Лицей Академии Яндекса</p>
+                    <div class="cert-actions">
+                        <a href="pdf/Лицей-Академии-Яндекса.pdf" target="_blank" class="btn btn-primary">
+                            <i class="fas fa-eye"></i> Открыть
+                        </a>
+                        <a href="pdf/Лицей-Академии-Яндекса.pdf" download class="btn btn-secondary">
+                            <i class="fas fa-download"></i> Скачать
+                        </a>
+                    </div>
+                    <div class="cert-image-wrapper">
+                        <img src="images/certificates_thumbnails/lyceum.png" alt="Сертификат Яндекс Лицей">
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2. ВЕРХНИЙ ПРАВЫЙ (горизонтальный) – кнопки СВЕРХУ -->
+            <div class="cert-card card-horizontal-1">
+                <div class="cert-top">
+                    <p class="cert-name">МШП Fullstack разработка</p>
+                    <div class="cert-actions">
+                        <a href="pdf/МШП-Fullstack-разработка.pdf" target="_blank" class="btn btn-primary">
+                            <i class="fas fa-eye"></i> Открыть
+                        </a>
+                        <a href="pdf/МШП-Fullstack-разработка.pdf" download class="btn btn-secondary">
+                            <i class="fas fa-download"></i> Скачать
+                        </a>
+                    </div>
+                    <div class="cert-image-wrapper">
+                        <img src="images/certificates_thumbnails/fullstack.png" alt="Сертификат МШП">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Центр – пустота -->
+            <div class="center-empty">
+                <div class="center-empty-inner">
+                    <img src="images/QR-blue.png" alt="telegram">
+                </div>
+            </div>
+
+            <!-- 3. НИЖНИЙ ЛЕВЫЙ (горизонтальный) – кнопки СНИЗУ -->
+            <div class="cert-card card-horizontal-2">
+                <div class="cert-image-wrapper">
+                    <img src="images/certificates_thumbnails/rss.png" alt="Сертификат RSS">
+                </div>
+                <div class="cert-bottom">
+                    <p class="cert-name">Rolling Scopes School Frontend</p>
+                    <div class="cert-actions">
+                        <a href="pdf/Rolling-Scopes-School.pdf" target="_blank" class="btn btn-primary">
+                            <i class="fas fa-eye"></i> Открыть
+                        </a>
+                        <a href="pdf/Rolling-Scopes-School.pdf" download class="btn btn-secondary">
+                            <i class="fas fa-download"></i> Скачать
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4. НИЖНИЙ ПРАВЫЙ (вертикальный) – кнопки СНИЗУ -->
+            <div class="cert-card card-vertical-2">
+                <div class="cert-image-wrapper">
+                    <img src="images/certificates_thumbnails/django.png" alt="Сертификат Django">
+                </div>
+                <div class="cert-bottom">
+                    <p class="cert-name">WEB разработка на Django </p>
+                    <div class="cert-actions">
+                        <a href="pdf/WEB-разработка-на-Django.pdf" target="_blank" class="btn btn-primary">
+                            <i class="fas fa-eye"></i> Открыть
+                        </a>
+                        <a href="pdf/WEB-разработка-на-Django.pdf" download class="btn btn-secondary">
+                            <i class="fas fa-download"></i> Скачать
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Архитектурный подход -->
+    <section class="architecture">
+        <h2 class="section-title fade-in">Архитектурный подход</h2>
+        <div class="architecture-grid">
+            <div class="architecture-card fade-in">
+                <div class="arch-icon">🧩</div>
+                <h3>SOLID принципы</h3>
+                <p>Внедрены все 5 принципов в системе голосования Night Coder. Каждый класс имеет одну
+                    ответственность.</p>
+            </div>
+            <div class="architecture-card fade-in">
+                <div class="arch-icon">⚙️</div>
+                <h3>Микросервисы</h3>
+                <p>Опыт построения распределенных систем: API Gateway + независимые сервисы + shared models.</p>
+            </div>
+            <div class="architecture-card fade-in">
+                <div class="arch-icon">🧪</div>
+                <h3>Качество кода</h3>
+                <p>85%+ покрытие тестами, CI/CD, чистая история коммитов, линтинг с Ruff и Black.</p>
+            </div>
+            <div class="architecture-card fade-in">
+                <div class="arch-icon">🚀</div>
+                <h3>Production готовность</h3>
+                <p>Полный стек развертывания: VPS, Docker, Nginx, Gunicorn, SSL, мониторинг.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Контакты -->
+    <section class="contact">
+        <h2 class="section-title fade-in">Контакты</h2>
+        <p class="contact-description fade-in">
+            Ищу позицию Junior Python Backend Developer. Готов к тестовым заданиям,
+            собеседованиям и стажировке. Все мои проекты работают онлайн — можете протестировать!
+        </p>
+        <div class="contact-links fade-in">
+            <a href="https://t.me/bravekirty" class="contact-link telegram" target="_blank">
+                <i class="fab fa-telegram"></i> @bravekirty
+            </a>
+            <a href="mailto:bravekirty@gmail.com" class="contact-link email" target="_blank">
+                <i class="fas fa-envelope"></i> bravekirty@gmail.com
+            </a>
+            <a href="https://github.com/bravekirty" class="contact-link github" target="_blank">
+                <i class="fab fa-github"></i> github.com/bravekirty
+            </a>
+            <a href="tel:+79096552008" class="contact-link phone" target="_blank">
+                <i class="fas fa-phone"></i> +7 (909) 655-20-08
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2026 Тарасов Кирилл | Python Backend Developer</p>
+    </footer>
+</div>
+
+<script src="script.js"></script>
 </body>
 
 </html>
